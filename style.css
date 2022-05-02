@@ -1,0 +1,29 @@
+table{
+    border-collapse: collapse;
+    width: 300px;
+    background-color: aquamarine;
+}
+td,th{
+    border: 2px solid black;  
+}
+caption{
+    font-size: 30px;
+}
+
+.div1{
+    background-color:cadetblue
+}
+
+.div2{
+    background-image: url(./download.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 500px;
+    margin: 50px;
+    background-size: 100%;
+    border: 2px solid black;
+}
+
+.div2 h1{
+    color: wheat;
+}

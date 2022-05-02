@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color:crimson;
+        }
+
+        table{
+            border-collapse: collapse;
+            margin: 20px;
+            color: wheat;
+            font-size: 20px;
+        }
+
+        td,th{
+            border: 1px solid white;
+        }
+
+        .sr{
+            width: 70px;
+        }
+
+        .name{
+            width: 200px;
+        }
+
+        .sal{
+            width: 150px;
+        }
+
+        #INR, #EUR, #USD{
+            display: none;
+        }
+
+        #report{
+            color: white;
+            margin: 20px 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="btndiv">
+        <button onclick="inrreport()">Report in INR</button>
+        <button onclick="eurreport()">Report in EUR</button>
+        <button onclick="usdreport()">Report in USD</button>
+    </div>
+
+    <div id="report"></div>
+
+    <table id="INR" class="table-striped">
+        <tr>
+            <th class="sr">Sr. No.</th>
+            <th class="name">Employee Name</th>
+            <th class="sal">Salary</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Employee 1</td>
+            <td>&#8377 25000</td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td>Employee 2</td>
+            <td>&#8377 45000</td>
+        </tr>
+        
+        <tr>
+            <td>3</td>
+            <td>Employee 3</td>
+            <td>&#8377 20000</td>
+        </tr>
+        
+        <tr>
+            <td>4</td>
+            <td>Employee 4</td>
+            <td>&#8377 37000</td>
+        </tr>
+        
+        <tr>
+            <td>5</td>
+            <td>Employee 5</td>
+            <td>&#8377 30000</td>
+        </tr>
+    </table>
+
+    <table id="EUR">
+        <tr>
+            <th class="sr">Sr. No.</th>
+            <th class="name">Employee Name</th>
+            <th class="sal">Salary</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Employee 1</td>
+            <td>&#8364 300</td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td>Employee 2</td>
+            <td>&#8364 540</td>
+        </tr>
+        
+        <tr>
+            <td>3</td>
+            <td>Employee 3</td>
+            <td>&#8364 240</td>
+        </tr>
+        
+        <tr>
+            <td>4</td>
+            <td>Employee 4</td>
+            <td>&#8364 442</td>
+        </tr>
+        
+        <tr>
+            <td>5</td>
+            <td>Employee 5</td>
+            <td>&#8364 360</td>
+        </tr>
+    </table>
+
+    <table id="USD">
+        <tr>
+            <th class="sr">Sr. No.</th>
+            <th class="name">Employee Name</th>
+            <th class="sal">Salary</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Employee 1</td>
+            <td>&#36 330</td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td>Employee 2</td>
+            <td>&#36 595</td>
+        </tr>
+        
+        <tr>
+            <td>3</td>
+            <td>Employee 3</td>
+            <td>&#36 270</td>
+        </tr>
+        
+        <tr>
+            <td>4</td>
+            <td>Employee 4</td>
+            <td>&#36 490</td>
+        </tr>
+        
+        <tr>
+            <td>5</td>
+            <td>Employee 5</td>
+            <td>&#36 400</td>
+        </tr>
+    </table>
+
+    <script>
+        function inrreport(){
+            
+            document.getElementById("report").innerHTML="Report in INR";
+            
+            document.getElementById("INR").style.display="block";
+
+            
+            document.getElementById("EUR").style.display="none";
+            document.getElementById("USD").style.display="none";
+        }
+
+        function eurreport(){
+            
+            document.getElementById("report").innerHTML="Report in EUR";
+
+            
+            document.getElementById("EUR").style.display="block";
+
+            document.getElementById("INR").style.display="none";
+            document.getElementById("USD").style.display="none";
+        }
+
+        function usdreport(){
+            document.getElementById("report").innerHTML="Report in USD";
+
+            
+            document.getElementById("USD").style.display="block";
+            
+            document.getElementById("INR").style.display="none";
+            document.getElementById("EUR").style.display="none";
+        }
+    </script>
+</body>
+</html>
